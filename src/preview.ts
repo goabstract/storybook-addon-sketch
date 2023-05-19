@@ -3,8 +3,6 @@ import { DOWNLOAD_EVENT } from './constants';
 import downloadFile from './download-file';
 
 function downloadPage({ title }: { title: string }) {
-  console.log('downloadPage')
-
   const page =(window as any).page2layers.getPage({
     title,
     width: 1920,

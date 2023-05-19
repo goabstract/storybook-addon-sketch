@@ -8,7 +8,6 @@ export default function SketchPlugin() {
   const emit = useChannel({});
 
   const downloadCurrent = React.useCallback(() => {
-    console.log('downloadCurrent');
     emit(DOWNLOAD_EVENT, { title: api.getCurrentStoryData().id });
   }, []);
 
